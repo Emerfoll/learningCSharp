@@ -1,0 +1,25 @@
+﻿<Properties StartupConfiguration="{8062348B-495B-4294-8E2B-ACE54883BE37}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="WiredBrainCoffee.StorageApp/Program.cs">
+    <Files>
+      <File FileName="WiredBrainCoffee.StorageApp/Program.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="WiredBrainCoffee.StorageApp" expanded="True">
+            <Node name="WiredBrainCoffee.StorageApp" expanded="True">
+              <Node name="Program.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.WiredBrainCoffee.StorageApp PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
