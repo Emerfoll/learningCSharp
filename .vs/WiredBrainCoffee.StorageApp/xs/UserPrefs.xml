@@ -1,14 +1,21 @@
 ﻿<Properties StartupConfiguration="{8062348B-495B-4294-8E2B-ACE54883BE37}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="WiredBrainCoffee.StorageApp/Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="WiredBrainCoffee.StorageApp/Data/StorageAppDbContext.cs">
     <Files>
-      <File FileName="WiredBrainCoffee.StorageApp/Program.cs" Line="1" Column="1" />
+      <File FileName="WiredBrainCoffee.StorageApp/Program.cs" Line="13" Column="43" />
+      <File FileName="WiredBrainCoffee.StorageApp/Repositories/GenericRepository.cs" Line="36" Column="1" />
+      <File FileName="WiredBrainCoffee.StorageApp/Repositories/SQLRepository.cs" Line="8" Column="33" />
+      <File FileName="WiredBrainCoffee.StorageApp/Data/StorageAppDbContext.cs" Line="11" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="WiredBrainCoffee.StorageApp" expanded="True">
             <Node name="WiredBrainCoffee.StorageApp" expanded="True">
-              <Node name="Program.cs" selected="True" />
+              <Node name="Data" expanded="True">
+                <Node name="StorageAppDbContext.cs" selected="True" />
+              </Node>
+              <Node name="Entities" expanded="True" />
+              <Node name="Repositories" expanded="True" />
             </Node>
           </Node>
         </State>
