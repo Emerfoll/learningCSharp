@@ -5,39 +5,50 @@ using WiredBrainCoffee.StorageApp.Repositories;
 
 namespace WiredBrainCoffee.StorageApp
 {
-  class Program
-  {
-    static void Main(string[] args)
+    class Program
     {
-      var employeeRepository = new SQLRepository<Employee>(new StorageAppDbContext());
-      AddEmployees(employeeRepository);
-      GetEmployeeById(employeeRepository);
+        static void Main(string[] args)
+        {
+            var employeeRepository = new SQLRepository<Employee>(new StorageAppDbContext());
+            AddEmployees(employeeRepository);
+            GetEmployeeById(employeeRepository);
+            WriteAllToConsole(employeeRepository);
 
-      var organizationRepository = new ListRepository<Organization>();
-      AddOrganizations(organizationRepository);
+            var organizationRepository = new ListRepository<Organization>();
+            AddOrganizations(organizationRepository);
+            WriteAllToConsole(organizationRepository);
 
-      Console.ReadLine();
+            Console.ReadLine();
+        }
+
+        private static void WriteAllToConsole(IReadRepository<IEntity> Repository)
+        {
+            var items = Repository.GetALL();
+            foreach (var item in items)
+            {
+                Console.WriteLine(item);
+            }
+        }
+
+        private static void GetEmployeeById(IRepository<Employee> employeeRepository)
+        {
+            var employee = employeeRepository.GetById(2);
+            Console.WriteLine($"Employee with Id 2: {employee.FirstName}");
+        }
+
+        private static void AddEmployees(IRepository<Employee> employeeRepository)
+        {
+            employeeRepository.Add(new Employee { FirstName = "Julia" });
+            employeeRepository.Add(new Employee { FirstName = "Anna" });
+            employeeRepository.Add(new Employee { FirstName = "Thomas" });
+            employeeRepository.Save();
+        }
+
+        private static void AddOrganizations(IRepository<Organization> organizationRepository)
+        {
+            organizationRepository.Add(new Organization { Name = "Pluralsight" });
+            organizationRepository.Add(new Organization { Name = "Globomantics" });
+            organizationRepository.Save();
+        }
     }
-
-    private static void GetEmployeeById(IRepository<Employee> employeeRepository)
-    {
-      var employee = employeeRepository.GetById(2);
-      Console.WriteLine($"Employee with Id 2: {employee.FirstName}");
-    }
-
-    private static void AddEmployees(IRepository<Employee> employeeRepository)
-    {
-      employeeRepository.Add(new Employee { FirstName = "Julia" });
-      employeeRepository.Add(new Employee { FirstName = "Anna" });
-      employeeRepository.Add(new Employee { FirstName = "Thomas" });
-      employeeRepository.Save();
-    }
-
-    private static void AddOrganizations(IRepository<Organization> organizationRepository)
-    {
-      organizationRepository.Add(new Organization { Name = "Pluralsight" });
-      organizationRepository.Add(new Organization { Name = "Globomantics" });
-      organizationRepository.Save();
-    }
-  }
 }
