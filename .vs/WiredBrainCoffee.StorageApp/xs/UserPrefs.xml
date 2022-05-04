@@ -1,8 +1,8 @@
 ﻿<Properties StartupConfiguration="{8062348B-495B-4294-8E2B-ACE54883BE37}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="WiredBrainCoffee.StorageApp/Repositories/SQLRepository.cs">
     <Files>
-      <File FileName="WiredBrainCoffee.StorageApp/Program.cs" Line="10" Column="40" />
-      <File FileName="WiredBrainCoffee.StorageApp/Repositories/SQLRepository.cs" Line="8" Column="11" />
+      <File FileName="WiredBrainCoffee.StorageApp/Program.cs" Line="13" Column="59" />
+      <File FileName="WiredBrainCoffee.StorageApp/Repositories/SQLRepository.cs" Line="20" Column="34" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
