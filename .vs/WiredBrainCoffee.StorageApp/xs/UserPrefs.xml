@@ -1,12 +1,8 @@
 ﻿<Properties StartupConfiguration="{8062348B-495B-4294-8E2B-ACE54883BE37}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="WiredBrainCoffee.StorageApp/Entities/EntityExtensions.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="WiredBrainCoffee.StorageApp/Repositories/SQLRepository.cs">
     <Files>
-      <File FileName="WiredBrainCoffee.StorageApp/Program.cs" Line="69" Column="6" />
-      <File FileName="WiredBrainCoffee.StorageApp/Entities/Employee.cs" Line="9" Column="1" />
-      <File FileName="WiredBrainCoffee.StorageApp/Repositories/IRepository.cs" Line="24" Column="2" />
-      <File FileName="WiredBrainCoffee.StorageApp/Repositories/SQLRepository.cs" Line="23" Column="10" />
-      <File FileName="WiredBrainCoffee.StorageApp/Repositories/RepositoryExtensions.cs" Line="6" Column="45" />
-      <File FileName="WiredBrainCoffee.StorageApp/Entities/EntityExtensions.cs" Line="3" Column="19" />
+      <File FileName="WiredBrainCoffee.StorageApp/Program.cs" Line="10" Column="40" />
+      <File FileName="WiredBrainCoffee.StorageApp/Repositories/SQLRepository.cs" Line="8" Column="11" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -14,10 +10,10 @@
           <Node name="WiredBrainCoffee.StorageApp" expanded="True">
             <Node name="WiredBrainCoffee.StorageApp" expanded="True">
               <Node name="Data" expanded="True" />
-              <Node name="Entities" expanded="True">
-                <Node name="EntityExtensions.cs" selected="True" />
+              <Node name="Entities" expanded="True" />
+              <Node name="Repositories" expanded="True">
+                <Node name="SQLRepository.cs" selected="True" />
               </Node>
-              <Node name="Repositories" expanded="True" />
             </Node>
           </Node>
         </State>
